@@ -1,0 +1,13 @@
+name: dart_demo
+version: 1.0.0
+
+dependencies:
+  # log4dart: any
+  # dart_to_js_script_rewriter: any
+  # httpclient
+  # https://pub.dartlang.org/packages/dio
+  dio: 1.0.14
+  # https://pub.dartlang.org/packages/mqtt_client
+  mqtt_client: 5.4.0
+  # https://pub.dartlang.org/packages/logging
+  logging: 0.11.3+2
