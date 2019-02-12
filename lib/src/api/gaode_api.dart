@@ -11,7 +11,7 @@ class GaoDeApi {
       Response response;
       response = await Dio().get(
           "https://restapi.amap.com/v3/weather/weatherInfo",
-          data: {
+          queryParameters: {
             "key": key != null ? key : "42167db31cf6a8ff6eeced37d5433a68",
             "city": city != null ? city : "140105", // 城市编码:小店区
             "extensions": extensions != null ? extensions : "all", //base:返回实况天气 all:返回预报天气
@@ -33,7 +33,7 @@ class GaoDeApi {
       Response response;
       response = await Dio().get(
           "https://restapi.amap.com/v3/ip",
-          data: {
+          queryParameters: {
             "key": key,
             "ip": ip, // 城市编码:小店区
 //            "sig": "all", //数字签名
