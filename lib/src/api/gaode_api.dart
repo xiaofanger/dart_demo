@@ -6,7 +6,7 @@ class GaoDeApi {
 
   /// 根据给定的城市编码获取当前的天气数据
   /// 测试使用key: 42167db31cf6a8ff6eeced37d5433a68
-  static Future getWeatherInfo({key, city, extensions}) async {
+  static Future getWeatherInfo({String key, String city, String extensions}) async {
     try {
       Response response;
       response = await Dio().get(

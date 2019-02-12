@@ -15,7 +15,7 @@ class FileUtil {
     });
   }
 
-  runSocker() async {
+  runSocket() async {
     // socket实现
     ServerSocket.bind('127.0.0.1', 4040)
         .then((serverSocket) {
